@@ -4,16 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUAKTECH Projects</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="Images/QUAKTECH.png" type="image/png">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font: 16px monospace, monospace;
+        }
+
+        .centered-div {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+
+        #content {
+            text-align: left;
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+            overflow: auto;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2em;
+            margin: 0;
+            padding: 0;
+        }
+
+        pre {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        hr {
+            border: 1px solid white;
+            margin: 10px 0;
+        }
+
+        a {
+            color: lightblue;
+        }
+    </style>
 </head>
 <body>
-    <div style="display:table;margin:16px auto" id="a">
-        <div id="b">
+    <div class="centered-div">
+        <div id="content">
             <pre>
 <h1><span style="cursor: pointer; text-decoration: none;" onclick="openLink('https://github.com/QUAKTECH')">QUAKTECH</span></h1> 
 <hr>
-QUAKTECH<a> <a href="index.html">Home</a> </a>
+QUAKTECH <a href="index.html">Home</a>
 =======================================
 =======================================
 =======================================
@@ -38,7 +90,8 @@ QUAKTECH<a> <a href="index.html">Home</a> </a>
 
 Projects
 ________________________________________________________________________________
-This page is for all of our projects that are in progress, not started, finished, etc.
+This page is for all of our projects that are in 
+progress, not started, finished, etc.
 
 
 T R A S H C A N O S
@@ -46,12 +99,16 @@ T R A S H C A N O S
 Description
 ________________________________________________________________________________
 This is an operating system we are working on; as the name suggests, 
-it's not going to be anything professional for a while. Speaking of the name, 
-it holds a few Easter eggs related to the same topic; when you look at it face-on, it just says "TrashCan OS," 
-but when you pay attention to the name, you get "trash can operating system," 
-meaning that even trash can operate, albeit systemically, then, if you pay more attention, you notice that it also says "trash can Operate," 
-removing the "system" and "ing"; aside from the name having many meanings, 
-this OS will be text-based, small, and will have many built-in programs to keep the user entertained.
+it's not going to be anything professional for a while. 
+Speaking of the name, it holds a few Easter eggs related 
+to the same topic; when you look at it face-on, it just says 
+"TrashCan OS," but when you pay attention to the name, you get 
+"trash can operating system," meaning that even trash can 
+operate, albeit systemically, then, if you pay more 
+attention, you notice that it also says "trash can Operate," 
+removing the "system" and "ing"; aside from the name having 
+many meanings, this OS will be text-based, small, and will have 
+many built-in programs to keep the user entertained.
 
 Status: NOT STARTED
 Main Dev: AeternusDio, Cupboardmanufacturer
@@ -59,14 +116,13 @@ Github: NO REPO YET
 License: QUAKTECH License v2 & MIT license
 ________________________________________________________________________________
 &copy; 2024 QUAKTECH
-
-<script>
-  function openLink(url) {
-    window.open(url, '_blank');
-  }
-</script>
             </pre>
         </div>
     </div>
+    <script>
+      function openLink(url) {
+        window.open(url, '_blank');
+      }
+    </script>
 </body>
 </html>
